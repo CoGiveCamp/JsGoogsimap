@@ -1,0 +1,22 @@
+{
+  "name": "GoogleMapSimple",
+  "version": "0.0.0",
+  "description": "GoogleMapSimple\r ===============",
+  "main": "mapApi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anthem001/GoogleMapSimple.git"
+  },
+  "author": "",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "3f3fcd4d824aa55617c5a8a08881cf83050caddc",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.0"
+  }
+}
