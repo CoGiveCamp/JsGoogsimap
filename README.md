@@ -7,7 +7,10 @@ This abstracts away some of the harder javascript in regards to Google Maps and 
 
 Usage:
 
-Include css/main.css in your page: <link rel="stylesheet" href="css/main.css"/>
+Include css/main.css in your page:
+```html
+<link rel="stylesheet" href="css/main.css"/>
+```
 
 Add Google Map API and build.min.js:
 ```html
