@@ -20,13 +20,13 @@
         // add locations
         var locations =  [
 
-            // add your locations here manually or from database (content of infowindow, lat, long)
+            // add your locations here manually or from database/ajax call
             ['City Hall',  -104.695324, 40.422195],
             ['Greeley FunPlex', -104.787211, 40.428002 ]
 
         ];
 
-        // run initialize on load
+        // initialize map
         google.maps.event.addDomListener(window, 'load', initialize(-104.716667, 40.416667, locations));
     </script>
 </body>
