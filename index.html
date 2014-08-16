@@ -13,17 +13,23 @@
 <body>
 	<div id="map-canvas"/>
     <script>
+
+        // center map on the following lat/long
+        var centerLong = -104.716667;
+        var centerLat = 40.416667;
+
         // add locations
         var locations =  [
 
             // add your locations here manually or from database/ajax call
+            // [ 'NAME OF PIN', Longitude, Latitude ]
             ['City Hall',  -104.695324, 40.422195],
             ['Greeley FunPlex', -104.787211, 40.428002 ]
 
         ];
 
         // initialize map
-        google.maps.event.addDomListener(window, 'load', initialize(-104.716667, 40.416667, locations));
+        google.maps.event.addDomListener(window, 'load', initialize(centerLong, centerLat , locations));
     </script>
 </body>
 </html>
