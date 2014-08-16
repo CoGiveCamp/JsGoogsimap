@@ -10,7 +10,7 @@ Usage:
 Include css/main.css in your page: <link rel="stylesheet" href="css/main.css"/>
 
 Add Google Map API and build.min.js:
-'''html
+```html
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="js/dist/build.min.js"></script>
 
