@@ -13,13 +13,13 @@ Add Google Map API and build.min.js:
 ```html
 <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
 <script type="text/javascript" src="js/dist/build.min.js"></script>
-
+```
 Add div for map to appear where you want:
-
+```html
 <div id="map-canvas"/>
-
+```
 Add your configuration (changing where applicable):
-
+```html
 <script>
 // center map on the following lat/long
 var centerLong = -104.716667;
@@ -39,7 +39,7 @@ var locations =  [
 google.maps.event.addDomListener(window, 'load', initialize(centerLong, centerLat , locations));
 
 </script>
-
+```
 You now should have a working map with pins.
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
