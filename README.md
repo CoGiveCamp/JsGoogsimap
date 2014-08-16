@@ -3,7 +3,11 @@ GoogleMapSimple
 
 Basic Google Map Functionality
 
-Example of how to set up google maps with marker and info window functionality.
+This abstracts away some of the harder javascript in regards to Google Maps and provides a basic setup of using markers and lat/longs for a location.
+
+Usage:
+
+
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except in compliance with the License. You may obtain a copy of the License at
 
