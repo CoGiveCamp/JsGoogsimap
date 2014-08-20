@@ -1,14 +1,14 @@
 
 /* main function to load google map */
-function initialize() {
+function initialize(centerLong, centerLat, locations) {
 
     // center map to lat/long on load
-    var myLatlng = new google.maps.LatLng(40.019444, -105.292778);
+    var myLatlng = new google.maps.LatLng(centerLat, centerLong);
 
     // set map options
     var mapOptions = {
 
-           zoom: 14,
+           zoom: 13,
            center: myLatlng,
            mapTypeId: google.maps.MapTypeId.ROADMAP
 
@@ -20,16 +20,6 @@ function initialize() {
     // create global info window
     var infoWindow = new google.maps.InfoWindow();
 
-    // add locations array
-    var locations =  [
-    
-        // add your locations here manually or from database (content of infowindow, lat, long)
-        ['Microsoft', -105.275586, 40.017721],
-        ['Google', -105.260998, 40.021659],
-        ['Gabe Villa<br/><img src="http://photos4.meetupstatic.com/photos/member/8/a/6/9/member_8615433.jpeg" width="40"/>',-105.266686, 40.017721]
-
-    ];
-
     // declare and cache marker and i
     var marker, i;
 
@@ -38,7 +28,7 @@ function initialize() {
 
         // set title and content
         var title = locations[i][0],
-          content = "Hello there " + title;
+          content = title;
 
         // create markers
         marker = new google.maps.Marker({
@@ -70,6 +60,4 @@ function initialize() {
 
 }
 
-// run initialize on load
-google.maps.event.addDomListener(window, 'load', initialize);
 
